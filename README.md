@@ -72,15 +72,6 @@ python trainGPPO.py
 
 ---
 
-## 📚 Useful commands
-
-```bash
-gzclient
-```
-```bash
-killall -9 gzserver gzclient
-```
----
 
 ## 📄 License
 
