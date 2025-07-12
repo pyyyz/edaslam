@@ -1,3 +1,6 @@
 [submodule "turtlebot3"]
 	path = turtlebot3
 	url = https://github.com/ROBOTIS-GIT/turtlebot3
+[submodule "navigation"]
+	path = navigation
+	url = https://github.com/ros-planning/navigation
