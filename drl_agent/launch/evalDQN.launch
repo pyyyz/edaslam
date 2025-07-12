@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <!-- This version uses the openai_ros environments -->
+    <rosparam command="load" file="$(find drl_agent)/config/my_turtlebot3_maze_params.yaml" />
+    <!-- Launch the training system -->
+    <node pkg="drl_agent" name="drl_agent" type="evalDQN.py" output="screen"/>
+</launch>
