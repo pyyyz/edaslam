@@ -1,0 +1,16 @@
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/key_world.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="gui" value="false"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+  </include> 
+
+  
+   <!-- SLAM GMAPPING -->
+	<include file="$(find turtlebot3_slam)/launch/turtlebot3_slam.launch">
+    <arg name="slam_methods" value="gmapping"/>
+  </include>  
+</launch>
