@@ -1,15 +1,9 @@
-# EDA-SLAM: Efficient Deep Active SLAM via Unknown-Region Reward and Dynamic Termination
+# Efficient Autonomous Exploration with Adaptive Deep Reinforcement Learning and Intelligent Termination
 
 ![GitHub license](https://img.shields.io/github/license/pyyyz/edaslam)
 ![GitHub stars](https://img.shields.io/github/stars/pyyyz/edaslam?style=social)
 
-**EDA-SLAM** is a deep reinforcement learning (DRL)-based framework for **Active Simultaneous Localization and Mapping (SLAM)**, designed to improve exploration efficiency, training stability, and real-world deployment performance. Built on **Proximal Policy Optimization (PPO)**, EDA-SLAM introduces three core innovations:
-
-1. **Unknown-region-driven reward function** for sustained exploration at high map coverage.
-2. **Dynamic window pose monitoring** to prevent ineffective behaviors (e.g., spinning or getting stuck).
-3. **Frontier-driven dynamic termination** to autonomously conclude exploration upon task completion.
-
-This framework achieves **40% faster convergence** compared to baseline methods and reduces **exploration time by 81.5%** and **path length by 41.1%** in real-world deployment.
+Autonomous exploration remains a fundamental challenge in robotics, particularly when balancing comprehensive environmental coverage efficiency. Current Deep Reinforcement Learning approaches suffer from training instability due to sparse rewards, inefficient termination mechanisms, and suboptimal reward designs that compromise exploration completeness. This paper introduces a novel Deep Reinforcement Learning framework for efficient autonomous exploration, which reimagines the process as holistic and adaptive, guided by environmental feedback and intelligent termination criteria. Our approach features three synergistic innovations: an unknown-region-driven reward function that adaptively scales incentives as environments become increasing mapped; a sliding window pose monitoring system that detects and terminates ineffective behaviors such as repetitive rotation or oscillation; and a frontier-driven termination mechanism that autonomously recognizes task completion through topological analysis of map frontiers. Validated through extensive simulation across diverse environments and rigorous real-world deployment in challenging laboratory settings with narrow corridors and dense obstacles, our framework demonstrates superior exploration efficiency while maintaining robust sim-to-real transfer without costly fine-tuning.Experimental results show our approach achieves $81.5\%$ faster exploration time and $41.1\%$ shorter path lengths, establishing a new paradigm for efficient autonomous exploration in time-sensitive applications.
 
 ## 📦 Requirements
 
